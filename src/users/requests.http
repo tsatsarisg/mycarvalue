@@ -3,7 +3,16 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "asdf@asdf.com",
+  "email": "asdsf@asdf.com",
+  "password": "asdlfkajsd"
+}
+
+### Signin
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "asdsf@asdf.com",
   "password": "asdlfkajsd"
 }
 
@@ -23,3 +32,10 @@ content-type: application/json
 {
   "password": "aaaaa"
 }
+
+### whoAmI
+GET http://localhost:3000/auth/whoAmI
+
+### signout
+POST http://localhost:3000/auth/signout
+
